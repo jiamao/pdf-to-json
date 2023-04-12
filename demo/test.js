@@ -1,13 +1,5 @@
-# pdf-to-json
-
-# example
-```js
-npm i node-pdf-to-json
-```
-
-```js
 const fs = require('fs');
-const pdf2json = require('node-pdf-to-json');
+const pdf2json = require('../src/index');
 
 const url = __dirname + '/pro.pdf';
 fs.readFile(url, function (error, data) {
@@ -26,4 +18,5 @@ fs.readFile(url, function (error, data) {
 pdf2json.load(url).then((contents) => {
     fs.writeFileSync(__dirname + '/pdf.json', JSON.stringify(contents));
 });
-```
+
+
