@@ -1,5 +1,37 @@
 # pdf-to-json
-
+把pdf内容转为json结构.
+```json
+[
+    {
+        "type": "H1",
+        "text": "投资是一场远行",
+        "items": [
+            {
+                "type": "H4",
+                "text": "基本信息 核心人员介绍 过往业绩",
+                "items": []
+            },
+            {
+                "type": "H3",
+                "text": "一、企业介绍 ABOUT US",
+                "items": [
+                ]
+            },
+            {
+                "type": "H3",
+                "text": "二、投资体系 ",
+                "items": [
+                ]
+            },
+            {
+                "type": "H2",
+                "text": "感谢观看",
+                "items": []
+            }
+        ]
+    }
+]
+```
 # example
 ```js
 npm i node-pdf-to-json
